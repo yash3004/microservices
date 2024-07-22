@@ -9,6 +9,7 @@ jwt = "*"
 grpcio-tools = "*"
 pyyaml = "*"
 sqlalchemy = "*"
+alembic = "*"
 
 [dev-packages]
 
