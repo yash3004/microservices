@@ -10,6 +10,12 @@ grpcio-tools = "*"
 pyyaml = "*"
 sqlalchemy = "*"
 alembic = "*"
+google-auth = "*"
+google-auth-oauthlib = "*"
+google-auth-httplib2 = "*"
+google-api-python-client = "*"
+flask-dance = "*"
+flask-oauthlib = "*"
 
 [dev-packages]
 
