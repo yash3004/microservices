@@ -1,2 +1,31 @@
-systax = "proto3";
-;
+syntax = "proto3";
+
+message User{
+  string id = 1;
+  string user_name = 2;
+  string name = 3;
+  int32 age = 4;
+  string email = 5;
+}
+
+message CreateUserReq{
+  string user_name = 1;
+  string name = 2;
+  string age = 3;
+  string email = 4;
+}
+message DeleteUserReq{
+  string id = 1;
+}
+
+message User_id{
+  string id = 1;
+}
+
+
+service User_Opr{
+  rpc CreateUser(CreateUserReq) returns (User_id);
+  rpc DeleteUser(DeleteUserReq) returns (User_id);
+  rpc AlterUser(User) returns (User_id);
+  rpc ReadUser(User_id) returns (User);
+}
